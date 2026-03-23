@@ -63,6 +63,7 @@ cleanup() {
 trap cleanup EXIT
 
 worker() {
+  trap - EXIT # prevent worker subshell from running the parent's EXIT trap
   local worker_id="$1"
   local dir="$2"
   local count_file="$3"
