@@ -3,7 +3,7 @@ set -euo pipefail
 
 # ====== USER-CONFIGURABLE VARIABLES ======
 OUTPUT_DIR="${OUTPUT_DIR:-/lfs/wkld-rep/all-write/}"  # Update the Dir Output
-NUM_FILES="${NUM_FILES:-3000000}"      # Total files to create in OUTPUT_DIR
+NUM_FILES="${NUM_FILES:-300000}"      # Total files to create in OUTPUT_DIR
 REPORT_EVERY="${REPORT_EVERY:-30000}"  # How often to print a progress report
 CHARSET='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
 CHARS_PER_FILE="${CHARS_PER_FILE:-1023}"
